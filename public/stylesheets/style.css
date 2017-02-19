@@ -1,0 +1,44 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.content {
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-top: 15px;
+}
+
+.paginate {
+    padding-left: 30px;
+}
+
+.refresh{
+    padding-left: 20px;
+}
+
+.center-content{
+    text-align: center;
+}
+
+.summary-table-header{
+    background-color: #ffffff;
+}
+
+.row .col-sm-3 .navbar-form {
+
+}
+
+#add-incident-link {
+    padding-bottom: 0px;
+
+}
+
+.padding-top-24px {
+    padding-top: 24px;
+}

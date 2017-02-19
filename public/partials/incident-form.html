@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Incidents</title>
+</head>
+<body>
+<div class="content">
+    <h1>Add an Incident</h1>
+    <form>
+        <div class="form-group">
+            <input class="form-control" type="text" required ng-model="incident.name">
+            <label>Name</label>
+        </div>
+        <div class="form-group">
+            <select class="form-control" required ng-model="incident.type">
+                <option>Wildfire</option>
+                <option>Prescribed Fire</option>
+                <option>Burned Emergency Response</option>
+                <option>Search and Rescue</option>
+            </select>
+            <label>Type</label>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" required ng-model="incident.unit">
+            <label>Unit</label>
+        </div>
+        <div class="form-group">
+            <select class="form-control" required ng-model="incident.state">
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+                <option>District of Columbia</option>
+                <option>Puerto Rico</option>
+                <option>Guam</option>
+                <option>American Samoa</option>
+                <option>U.S. Virgin Islands</option>
+                <option>Northern Mariana Islands</option>
+            </select>
+            <label>State</label>
+        </div>
+        <div class="form-group">
+            <select class="form-control" required ng-model="incident.status">
+                <option>Inactive</option>
+                <option>Active</option>
+                <option>Unknown</option>
+            </select>
+            <label>Status</label>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" required ng-model="incident.acres">
+            <label>Acres</label>
+        </div>
+        <input type="button" class="btn btn-primary" value='Save' ng-click="save()">
+    </form>
+</div>
+</body>
+</html>

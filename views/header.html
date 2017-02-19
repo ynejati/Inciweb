@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheets/header-style.css">
+</head>
+<nav class="navbar navbar-inverse navbar-fixed-top" id="header">
+    <div class="navbar-padding">
+        <div class="navbar-header">
+            <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/Inciweb-mock-header-70.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav pull-right" id="pad-right-15px">
+                <li>
+                    <a href="https://www.github.com" class="btn btn-social-icon btn-github" title="View Source"
+                       id="view-source" data-toggle="tooltip" data-placement="bottom">
+                        <span class="fa fa-github"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle=tooltip]').hover(function(){
+            // on mouseenter
+            $(this).tooltip('show');
+        }, function(){
+            // on mouseleave
+            $(this).tooltip('hide');
+        });
+    });
+</script>
+</html>

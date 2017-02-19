@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inciweb</title>
+</head>
+<body class="content">
+<h1>Delete Incident</h1>
+<p>
+    Are you sure you want to delete this incident?
+</p>
+<ul>
+    <li>Name: {{incident.name}}</li>
+    <li>Type: {{incident.type}}</li>
+    <li>Unit: {{incident.unit}}</li>
+    <li>State: {{incident.state}}</li>
+    <li>Status: {{incident.status}}</li>
+    <li>Acres: {{incident.acres}}</li>
+    <li>Updated: {{incident.updated}}</li>
+
+</ul>
+<input type="button" value="Yes, Delete" class="btn btn-danger" ng-click="delete()" />
+<a class="btn btn-default" href="/#/">No, Go Back</a>
+</body>
+</html>
